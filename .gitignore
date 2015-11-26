@@ -1,0 +1,17 @@
+syntax: glob
+application/config/config.php
+application/config/database.php
+application/cache
+application/logs
+assets/uploads
+tmp
+nbproject
+chilesinpapeleo.mwb.bak
+.idea
+syntax:regexp
+\.orig\..*$
+\.orig$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+Thumbs.db$

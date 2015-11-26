@@ -1,0 +1,227 @@
+.contenedor-filtros-tramites { text-align: center; }
+.contenedor-filtros-tramites .btn-group { margin:0 auto; width:220px; }
+
+.alert-custom { color:#000; text-align: center; }
+.alert-custom strong { font-size:22px; }
+
+.bloque-tramite { cursor: pointer; font-family: 'gobCLRegular'; float:left; width:215px; padding:5px; margin:5px; border-radius: 5px; }
+.bloque-tramite.grado-1 { background-color: #FFE503; }
+.bloque-tramite.grado-2 { background-color: #E8B903; }
+.bloque-tramite.grado-3 { background-color: #FFB40A; }
+.bloque-tramite.grado-4 { background-color: #E88B03; }
+.bloque-tramite.grado-5 { background-color: #FF7503; }
+
+.bloque-tramite.digitalizado {
+    color:#fff; background-color: #84b935;
+}
+
+.bloque-tramite.sello_chilesinpapeleo { color:#fff; background-color: #84b935; border:1px solid #eee; width:213px; }
+.bloque-tramite.sello_chilesinpapeleo .filtro-tramite {
+    min-height: 40px;
+}
+.bloque-tramite.sello_chilesinpapeleo .filtro-cantidad{
+    background: url('../img/sigue_el_avance/ico_chilesinpapeleo_32_on_white.png') left top no-repeat;
+    width:32px;
+    height:32px;
+    padding-top: 30px;
+}
+.bloque-tramite.sello_chilesinpapeleo .filtro-institucion {
+    max-width: 180px;
+}
+
+.filtro-tramite { font-weight: bold; width:85%; line-height:18px; }
+.filtro-institucion { font-size:12px; line-height:12px; margin-top:5px; }
+.filtro-cantidad { position: absolute; top:5px; right:5px; }
+.cerrar-tramite { cursor: pointer; position: absolute; font-style: italic; top:5px; right:5px; width:20px; display:none; }
+.mas-info { display: none; margin-right:15px; }
+
+.bloque-tramite.large { color:#333; cursor: auto; width:660px; z-index:9999; background-color: #fff; border:3px solid #d2d2d2; }
+.bloque-tramite.large .cerrar-tramite { display: block; }
+.bloque-tramite.large .filtro-cantidad,
+.bloque-tramite.large .filtro-tramite,
+.bloque-tramite.large .filtro-institucion { display: none; }
+.bloque-tramite.large small { font-size:11px; margin-left:20px; }
+.bloque-tramite.large .contenedor-grafico-canales { margin-top: 20px; }
+
+.btn-filtro i { margin-left:5px; }
+
+.tramites-overlay { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1040; background-color: black; display:none; }
+
+/*RESULTADOS DIGITALIZACION*/
+.info-participaciones {
+    text-align: center;
+    margin-bottom:15px;
+}
+.info-participaciones .label {
+    font-size:16px;
+    padding:2px 5px;
+}
+
+.info-participaciones p {
+    line-height: 16px;
+}
+
+.info-participaciones small {
+    display: block;
+    line-height: 11px;
+    padding-top: 5px;
+}
+
+.info-participaciones small a {
+    font-size: 11px;
+}
+
+.filtros-tramites-digitalizados {
+    background-color: #eee;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.filtros-tramites-digitalizados .control-group{
+    float:left;
+    margin:20px 10px;
+}
+.filtros-tramites-digitalizados .control-group label {
+    float:left;
+    margin-left: 40px;
+}
+
+.filtros-tramites-digitalizados .btn-group {
+    float:left;
+    margin-left:10px;
+}
+
+.filtros-tramites-digitalizados .titulo-filtros{
+    background:url('../img/sigue_el_avance/fondo_titulo_filtros.png') left top no-repeat;
+    padding-left:40px;
+    margin-left: 20px;
+    margin-top:15px;
+}
+
+.filtros-tramites-digitalizados .titulo-filtros h3 {
+    color:#a3bd31;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.filtros-tramites-digitalizados .titulo-filtros p {
+    font-size:12px;
+    line-height: 14px;
+    margin:0;
+    padding:0;
+}
+
+.tramites-digitalizados .bloque-tramite{
+    width:270px;
+    min-height: 50px;
+    margin:-1px 0 0 -1px;
+    padding:15px 20px;
+    border-radius: 0;
+    background:#fff;
+    border:1px solid #ddd;
+}
+.tramites-digitalizados .bloque-tramite.active {
+    width:581px;
+    z-index: 9999;
+    background-color:#5bb75b;
+    color: #fff;
+}
+
+.tramites-digitalizados .bloque-tramite.proactivo {
+    background-image:none;
+}
+
+.tramites-digitalizados .bloque-tramite.proactivo .filtro-cantidad {
+    display:none;
+}
+
+.tramites-digitalizados .filtro-cantidad { 
+    bottom:10px;
+    right:5px; 
+    top:auto;
+    padding:3px 5px;
+}
+
+.tramites-digitalizados .active .filtro-tramite {
+    font-weight: bold;
+}
+
+.tramites-digitalizados .active .filtro-cantidad,
+.tramites-digitalizados .active .filtro-institucion {
+    display:none;
+}
+
+.tramites-digitalizados .filtro-tramite {
+    margin-bottom:10px;
+    font-weight: normal;
+    font-size:20px;
+    line-height: 20px;
+}
+
+.tramites-digitalizados .filtro-institucion {
+    width:90%;
+    float:left;
+    font-size: 14px;
+}
+
+.tramites-digitalizados .mas-info .label {
+    margin-left: 20px;
+    padding:3px 5px;
+}
+
+.cont-url-chileatiende {
+    float:right;
+}
+
+.cont-url-chileatiende .btn-small {
+    font-size:16px;
+    font-weight: bold;
+}
+
+/**** Isotope filtering ****/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, background-color, color;
+     -moz-transition-property:    -moz-transform, background-color, color;
+      -ms-transition-property:     -ms-transform, background-color, color;
+       -o-transition-property:         top, left, background-color, color;
+          transition-property:         transform, background-color, color;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE  `avance_tramites` ADD  `url_cha` VARCHAR( 255 ) NULL DEFAULT NULL AFTER  `nombre`;

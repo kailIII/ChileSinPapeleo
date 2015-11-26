@@ -1,0 +1,17 @@
+#<Location /backend>
+#AuthType Basic
+#AuthName "Acceso Restringido"
+#AuthUserFile /var/www/www.chilesinpapeleo.cl/.htpasswd
+#Require valid-user
+#</Location>
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|tmp|humans\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+<Files backend>
+AuthName "backend"
+AuthType Basic
+AuthUserFile /var/www/www.chilesinpapeleo.cl/.htpasswd
+require valid-user
+</Files>
